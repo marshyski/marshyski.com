@@ -79,3 +79,5 @@ a.tt:hover span.bottom{display:block;padding:3px 8px 10px;color:#181818;backgrou
 .bubblewrap li{display:inline;width: 65px;height:60px;}
 .bubblewrap li img{width: 37px;height: 37px;border:0;margin-right: 12px;-moz-transition:-moz-transform 0.1s ease-in;-webkit-transition:-webkit-transform 0.1s ease-in; -o-transition:-o-transform 0.1s ease-in;}
 .bubblewrap li img:hover{-moz-transform:scale(1.8);-webkit-transform:scale(1.8);-o-transform:scale(1.8);}
+.bubblewrap a {text-decoration:none;border: 0;border-bottom-style:none;border-bottom-width:0px;border:none;}
+
