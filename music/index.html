@@ -1,155 +1,147 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Marshy Ski / Tim Ski">
     <meta name="author" content="Tim Ski">
-    <link rel="shortcut icon" href="../theme/img/favicon.ico">
+    <link rel="shortcut icon" href="../bower_components/img/favicon.ico">
     <title>Marshy Ski</title>
-    <link rel="stylesheet" href="../theme/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../theme/css/jplayer.blue.monday.css">
-    <link rel="stylesheet" href="../theme/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/css/jplayer.blue.monday.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/css/main.css">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
+      <script src="../bower_components/respond/src/respond.js"></script>
     <![endif]-->
-    <style>
-    @import url("http://fonts.googleapis.com/css?family=Raleway:400,700");
-    body {
-      font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 18px;
-      color: #222222;
-      background: #fefefe;
-      padding-top: 30px;
-    }
-    .footer {
-      padding: 20px 0 30px 0;
-    }
-    a, a:hover {border-bottom: 1px dotted; color: #444;}
-    a:hover {text-decoration: none; color: #000;}
-    .logo-title {font-size: 56px; color: #403072; padding-top: 80px;
-                font-family: "Raleway", "Arial Narrow Bold", sans-serif;
-                font-weight: bold; line-height: 30px; margin-left: 5px;}
-    .logo-title a, .logo-title a:hover {color: #000; text-decoration: none;
-                                        border-bottom: none;}
-    .logo-title a:hover {color: #222222;}
-    .logo-image {vertical-align: top; border: none;}
-    a.list-group-item.active {background: #009BE3; border: 0px solid #222;}
-    a.list-group-item.active:hover {background: #009BE3; border: 0px solid #222;}
-    @media (max-width: 600px) {
-        .logo-header-section {
-          margin: 20px 32px 0 0;
-        }
-    }
-    </style>
-
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36677041-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36677041-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
     </script>
-  </head>
+</head>
 <body>
     <a href="https://github.com/marshyski/marshyski.com" class="github">
-        <img style="position: absolute; top: 0; right: 0; border: 0;" src="../theme/img/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="../bower_components/img/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
     </a>
     <div class="container">
         <div class="row">
-    <div class="col-md-12">
-        <div class="logo-header-section">
-            <a href="/" style="text-decoration: none; border: none;"><i class="fa fa-terminal fa-4x"></i></a>
-            <span class="logo-title"><a href="/">Marshy Ski</a></span><br><br>
+            <div class="col-md-12">
+                <div class="logo-header-section">
+                    <a href="/" style="text-decoration: none; border: none;"><i class="fa fa-terminal fa-4x"></i></a>
+                    <span class="logo-title"><a href="/">Marshy Ski</a></span>
+                    <br>
+                    <br>
+                </div>
+            </div>
         </div>
-    </div>
-</div>        <div class="row">
-    <div class="col-md-8">
-       <h1>Music <i class="fa fa-music"></i></a></h1><br>
-	<h3>Stream Demos</h3>
-	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-	<div id="jp_container_1" class="jp-audio">
-		<div class="jp-type-playlist">
-		<div class="jp-gui jp-interface">
-			<ul class="jp-controls">
-				<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
-				<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
-				<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
-				<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
-				<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
-				<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
-				<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
-				<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
-			</ul>
-		<div class="jp-progress">
-		<div class="jp-seek-bar">
-		<div class="jp-play-bar"></div>
-		</div>
-		</div>
-		<div class="jp-volume-bar">
-		<div class="jp-volume-bar-value"></div>
-		</div>
-		<div class="jp-time-holder">
-		<div class="jp-current-time"></div>
-		<div class="jp-duration"></div>
-		</div>
-			<ul class="jp-toggles">
-				<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
-				<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
-				<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
-				<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
-			</ul>
-		</div>
-		<div class="jp-playlist">
-			<ul>
-				<li></li>
-			</ul>
-		</div>
-		<div class="jp-no-solution">
-			<span>Update Required</span>
-			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-		</div>
-		</div>
-		</div>
-		
-	<h3>Stream Videos</h3>
-	Just emo-shredding on my acoustic.
-	<iframe width="555" height="400" src="http://www.youtube.com/embed/BSFQBFaSn5I" scrolling="no" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br><br>
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Music <i class="fa fa-music"></i></a></h1>
+                <br>
+                <h3>Stream Demos</h3>
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                <div id="jp_container_1" class="jp-audio">
+                    <div class="jp-type-playlist">
+                        <div class="jp-gui jp-interface">
+                            <ul class="jp-controls">
+                                <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-play" tabindex="1">play</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-next" tabindex="1">next</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a>
+                                </li>
+                            </ul>
+                            <div class="jp-progress">
+                                <div class="jp-seek-bar">
+                                    <div class="jp-play-bar"></div>
+                                </div>
+                            </div>
+                            <div class="jp-volume-bar">
+                                <div class="jp-volume-bar-value"></div>
+                            </div>
+                            <div class="jp-time-holder">
+                                <div class="jp-current-time"></div>
+                                <div class="jp-duration"></div>
+                            </div>
+                            <ul class="jp-toggles">
+                                <li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a>
+                                </li>
+                                <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="jp-playlist">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
 
-	Just singing a little bit for the camera.
-	<iframe width="555" height="400" src="https://www.facebook.com/video/embed?video_id=665115853500890" scrolling="no" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br><br>
-			
-	** Download Still Frame Past Time's EP When Did This Happen <a href="../sfpt/smubla/StillFramePastTime_WhenDidThisHappen.rar" target="_blank"><b>here</b></a><br><br>.
-    </div>
-    <div class="col-md-offset-1 col-md-3" id="sidebar">
-     <center><img src="../theme/img/marshyski.png" width="120" height="110">
-     <p style="font-style:italic;font-size:16px;"><font color="#169E5E">Sysadmin at heart,</font> <font color="#009be3">web-doer,</font> <font color="#FF6600">some dude</font></p></center><br>
-      <div class="list-group">
-                  <a href="../" class="list-group-item ">Blog</a>
-                  <a href="../man-behind-the-keyboard/" class="list-group-item ">Man Behind The Keyboard</a>
-                  <a href="./" class="list-group-item active">Music</a>
-              </div>
-    </div>
-</div>
+                <h3>Stream Videos</h3> Just emo-shredding on my acoustic
+                <br>
+                <iframe width="333" height="200" src="https://www.youtube.com/embed/BSFQBFaSn5I" scrolling="no" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <br>
+                <br> Just singing a little bit for the camera
+                <br>
+                <iframe width="333" height="200" src="https://www.facebook.com/video/embed?video_id=665115853500890" scrolling="no" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <br>
+                <br> ** Download Still Frame Past Time's EP When Did This Happen <a href="../sfpt/smubla/StillFramePastTime_WhenDidThisHappen.rar" target="_blank"><b>here</b></a>
+                <br>
+                <br>.
+            </div>
+            <div class="col-md-offset-1 col-md-3" id="sidebar">
+                <center><img src="../bower_components/img/marshyski.png" width="120" height="110">
+                    <p style="font-style:italic;font-size:16px;"><font color="#009be3">Sysadmin at heart</font> <font color="#169E5E">Open Source</font> <font color="#8A6D3B">Python / Go</font>
+                    </p>
+                </center>
+                <br>
+                <div class="list-group">
+                    <a href="/" class="list-group-item ">Man Behind The Keyboard</a>
+                    <a href="./" class="list-group-item active">Music</a>
+                </div>
+            </div>
+        </div>
         <hr/>
         <div class="footer pull-left">
-        <a href="https://www.facebook.com/marshyski" target="_blank" title="Like on FB" style="text-decoration: none; border: none;"><i class="fa fa-facebook-square fa-2x"></i></a>
-        <a href="https://instagram.com/timskiio" target="_blank" title="Follow on Instagram" style="text-decoration: none; border: none;"><i class="fa fa-instagram fa-2x"></i></a>
-        <a href="http://marshyski.tumblr.com" target="_blank" title="Follow on Tumblr" style="text-decoration: none; border: none;"><i class="fa fa-tumblr-square fa-2x"></i></a>
-        <a href="https://github.com/marshyski" target="_blank" title="Follow on GitHub" style="text-decoration: none; border: none;"><i class="fa fa-github-square fa-2x"></i></a>
-        <a href="http://marshyski.tumblr.com/rss" target="_blank" title="Follow via RSS" style="text-decoration: none; border: none;"><i class="fa fa-rss-square fa-2x"></i></a>
-	&nbsp; timski[AT]linux[DOT]com
+            <a href="https://instagram.com/skeetertheshihtzu" target="_blank" title="Follow on Instagram" style="text-decoration: none; border: none;"><i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://github.com/marshyski" target="_blank" title="Follow on GitHub" style="text-decoration: none; border: none;"><i class="fa fa-github-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/timski/" target="_blank" title="Connect on LinkedIn" style="text-decoration: none; border: none;"><i class="fa fa-linkedin-square fa-2x"></i></a> &nbsp; marshyski[AT]gmail[DOT]com
         </div>
     </div>
-
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="../theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../theme/js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="../theme/js/jplayer.playlist.min.js"></script>
-    <script type="text/javascript" src="../theme/js/marshyski.playlist.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="../bower_components/js/jplayer.playlist.min.js"></script>
+    <script type="text/javascript" src="../bower_components/js/marshyski.playlist.js"></script>
 </body>
 </html>
